@@ -1,0 +1,54 @@
+
+.card-component {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  width: 380px;
+  height: 400px;
+  margin: 35% 16px;
+  background-color: #e7dbdb79;
+  border-radius: 10px;
+  -webkit-box-shadow: 4px 7px 5px 0px rgba(0, 0, 0, 0.56);
+  -moz-box-shadow: 4px 7px 5px 0px rgba(0, 0, 0, 0.56);
+  box-shadow: 4px 7px 5px 0px rgba(0, 0, 0, 0.56);
+  &:hover {
+    cursor: pointer;
+    box-shadow: 4px 7px 5px 0px #F34A23;
+  }
+}
+
+.card-img {
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.card-info {
+  overflow: hidden;
+}
+
+.card-img a img {
+  width: 380px;
+}
+
+.card-title, .card-text {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/*media query*/
+
+@media screen and (min-width:320px) and (max-width: 768px) {
+  .card-component {
+    width: 90%;
+    margin-top: 0;
+    margin-left: 5%;
+  }
+
+  .card-img a img{
+    width: 100%;
+  }
+
+  .card-info {
+    height: 40%;
+    font-size: .8rem;
+  }
+}
