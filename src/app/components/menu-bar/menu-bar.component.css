@@ -62,9 +62,9 @@
 
 /*media query*/
 
-@media screen and (min-width: 320px) and (max-width: 767px) {
+@media screen and (min-width: 320px) and (max-width: 768px) {
   .cabecalho {
-    height: 25%;
+    height: 23%;
   }
   .logo {
     display: flex;

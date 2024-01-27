@@ -1,19 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&display=swap');
+
+.card-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 380px;
+  height: 400px;
+  background-color: transparent;
+  margin-top: 2%;
+  border-radius: 12px;
+  &:hover {
+    background-color: #F34A23;
+  }
+}
 
 .card-component {
   display: flex;
   flex-direction: column;
   text-align: center;
-  width: 380px;
-  height: 400px;
-  margin: 35% 16px;
-  background-color: #e7dbdb79;
+  width: 375px;
+  height: 395px;
+  background-color: antiquewhite;
   border-radius: 10px;
   -webkit-box-shadow: 4px 7px 5px 0px rgba(0, 0, 0, 0.56);
   -moz-box-shadow: 4px 7px 5px 0px rgba(0, 0, 0, 0.56);
   box-shadow: 4px 7px 5px 0px rgba(0, 0, 0, 0.56);
   &:hover {
     cursor: pointer;
-    box-shadow: 4px 7px 5px 0px #F34A23;
+
   }
 }
 
@@ -24,6 +38,7 @@
 
 .card-info {
   overflow: hidden;
+  font-family: 'Oswald', sans-serif;
 }
 
 .card-img a img {
@@ -37,10 +52,15 @@
 /*media query*/
 
 @media screen and (min-width:320px) and (max-width: 768px) {
+  .card-box {
+    width: 96%;
+    height: 100%;
+    padding: 2%;
+  }
+
   .card-component {
-    width: 90%;
-    margin-top: 0;
-    margin-left: 5%;
+    width: 98%;
+    height: 100%;
   }
 
   .card-img a img{
@@ -52,3 +72,4 @@
     font-size: .8rem;
   }
 }
+
